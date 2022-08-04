@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./pages/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Todo</title>
-</head>
-<body>
-<script src="./scripts/index.js"></script>
-</body>
+  </head>
+  <body class="page">
+    <div class="page__container">
+      <div class="todo">
+        <div class="todo__content">
+          <form action="#" id="todo__form" id="form" name="todo-form">
+            <div class="todo__add">
+              <input
+                minlength="2"
+                maxlength="20"
+                type="text"
+                class="todo__input"
+                placeholder="Add new task"
+              />
+              <button type="submit" class="todo__add-btn" value="todo-form"></button>
+            </div>
+          </form>
+          <div class="todo__before">
+          </div>
+        </div>
+      </div>
+    </div>
+    <template id="todo_card">
+      <div class="todo__card">
+        <div class="todo__cercle"></div>
+        <span class="todo__text"></span>
+      </div>
+    </template>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
